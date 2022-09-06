@@ -2,10 +2,10 @@
 /**
  * Customizer settings.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Register additional scripts.
@@ -17,7 +17,7 @@ namespace CompanyName\wunderscore;
 function customize_additional_scripts( $wp_customize ) {
 	// Register a setting.
 	$wp_customize->add_setting(
-		'wunderscore_header_scripts',
+		'custom_header_scripts',
 		[
 			'default'           => '',
 			'sanitize_callback' => 'force_balance_tags',
@@ -26,18 +26,18 @@ function customize_additional_scripts( $wp_customize ) {
 
 	// Create the setting field.
 	$wp_customize->add_control(
-		'wunderscore_header_scripts',
+		'custom_header_scripts',
 		[
-			'label'       => esc_attr__( 'Header Scripts', 'wunderscore' ),
-			'description' => esc_attr__( 'Additional scripts to add to the header. Basic HTML tags are allowed.', 'wunderscore' ),
-			'section'     => 'wunderscore_additional_scripts_section',
+			'label'       => esc_attr__( 'Header Scripts', 'custom' ),
+			'description' => esc_attr__( 'Additional scripts to add to the header. Basic HTML tags are allowed.', 'custom' ),
+			'section'     => 'custom_additional_scripts_section',
 			'type'        => 'textarea',
 		]
 	);
 
 	// Register a setting.
 	$wp_customize->add_setting(
-		'wunderscore_footer_scripts',
+		'custom_footer_scripts',
 		[
 			'default'           => '',
 			'sanitize_callback' => 'force_balance_tags',
@@ -46,11 +46,11 @@ function customize_additional_scripts( $wp_customize ) {
 
 	// Create the setting field.
 	$wp_customize->add_control(
-		'wunderscore_footer_scripts',
+		'custom_footer_scripts',
 		[
-			'label'       => esc_attr__( 'Footer Scripts', 'wunderscore' ),
-			'description' => esc_attr__( 'Additional scripts to add to the footer. Basic HTML tags are allowed.', 'wunderscore' ),
-			'section'     => 'wunderscore_additional_scripts_section',
+			'label'       => esc_attr__( 'Footer Scripts', 'custom' ),
+			'description' => esc_attr__( 'Additional scripts to add to the footer. Basic HTML tags are allowed.', 'custom' ),
+			'section'     => 'custom_additional_scripts_section',
 			'type'        => 'textarea',
 		]
 	);
@@ -79,7 +79,7 @@ function customize_social_icons( $wp_customize ) {
 
 		// Register a setting.
 		$wp_customize->add_setting(
-			'wunderscore_' . $network . '_link',
+			'custom_' . $network . '_link',
 			[
 				'default'           => '',
 				'sanitize_callback' => 'esc_url',
@@ -88,10 +88,10 @@ function customize_social_icons( $wp_customize ) {
 
 		// Create the setting field.
 		$wp_customize->add_control(
-			'wunderscore_' . $network . '_link',
+			'custom_' . $network . '_link',
 			[
-				'label'   => /* translators: the social network name. */ sprintf( esc_attr__( '%s URL', 'wunderscore' ), ucwords( $network ) ),
-				'section' => 'wunderscore_social_links_section',
+				'label'   => /* translators: the social network name. */ sprintf( esc_attr__( '%s URL', 'custom' ), ucwords( $network ) ),
+				'section' => 'custom_social_links_section',
 				'type'    => 'text',
 			]
 		);
@@ -110,7 +110,7 @@ add_action( 'customize_register', __NAMESPACE__ . '\customize_social_icons' );
 function customize_copyright_text( $wp_customize ) {
 	// Register a setting.
 	$wp_customize->add_setting(
-		'wunderscore_copyright_text',
+		'custom_copyright_text',
 		[
 			'default'           => '',
 			'sanitize_callback' => 'wp_kses_post',
@@ -119,11 +119,11 @@ function customize_copyright_text( $wp_customize ) {
 
 	// Create the setting field.
 	$wp_customize->add_control(
-		'wunderscore_copyright_text',
+		'custom_copyright_text',
 		[
-			'label'       => esc_attr__( 'Copyright Text', 'wunderscore' ),
-			'description' => esc_attr__( 'The copyright text will be displayed in the footer. Basic HTML tags allowed.', 'wunderscore' ),
-			'section'     => 'wunderscore_footer_section',
+			'label'       => esc_attr__( 'Copyright Text', 'custom' ),
+			'description' => esc_attr__( 'The copyright text will be displayed in the footer. Basic HTML tags allowed.', 'custom' ),
+			'section'     => 'custom_footer_section',
 			'type'        => 'textarea',
 		]
 	);

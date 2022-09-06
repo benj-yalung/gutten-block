@@ -4,10 +4,10 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Prints HTML with date information for the current post.
@@ -20,7 +20,7 @@ function print_post_date( $args = [] ) {
 
 	// Set defaults.
 	$defaults = [
-		'date_text'   => esc_html__( 'Posted on', 'wunderscore' ),
+		'date_text'   => esc_html__( 'Posted on', 'custom' ),
 		'date_format' => get_option( 'date_format' ),
 	];
 

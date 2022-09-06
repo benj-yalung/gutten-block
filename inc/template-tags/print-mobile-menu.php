@@ -2,10 +2,10 @@
 /**
  * Displays the mobile menu with off-canvas background layer.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Displays the mobile menu with off-canvas background layer.
@@ -29,7 +29,7 @@ function print_mobile_menu() {
 	}
 	?>
 	<div class="off-canvas-screen"></div>
-	<nav class="off-canvas-container" aria-label="<?php esc_attr_e( 'Mobile Menu', 'wunderscore' ); ?>" aria-hidden="true" tabindex="-1">
+	<nav class="off-canvas-container" aria-label="<?php esc_attr_e( 'Mobile Menu', 'custom' ); ?>" aria-hidden="true" tabindex="-1">
 		<?php
 		// Mobile menu args.
 		$mobile_args = [

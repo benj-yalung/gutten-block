@@ -2,10 +2,10 @@
 /**
  * Get an attachment ID from it's URL.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Get an attachment ID from it's URL.

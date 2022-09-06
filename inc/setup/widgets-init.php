@@ -2,10 +2,10 @@
 /**
  * Register widget area.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Register widget area.
@@ -18,7 +18,7 @@ function widgets_init() {
 
 	// Define sidebars.
 	$sidebars = [
-		'sidebar-1' => esc_html__( 'Sidebar 1', 'wunderscore' ),
+		'sidebar-1' => esc_html__( 'Sidebar 1', 'custom' ),
 	];
 
 	// Loop through each sidebar and register.
@@ -27,7 +27,7 @@ function widgets_init() {
 			[
 				'name'          => $sidebar_name,
 				'id'            => $sidebar_id,
-				'description'   => /* translators: the sidebar name */ sprintf( esc_html__( 'Widget area for %s', 'wunderscore' ), $sidebar_name ),
+				'description'   => /* translators: the sidebar name */ sprintf( esc_html__( 'Widget area for %s', 'custom' ), $sidebar_name ),
 				'before_widget' => '<aside class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h2 class="widget-title">',

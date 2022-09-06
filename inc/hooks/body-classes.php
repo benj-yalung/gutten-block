@@ -2,10 +2,10 @@
 /**
  * Adds custom classes to the array of body classes.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Adds custom classes to the array of body classes.

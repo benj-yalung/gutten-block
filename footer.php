@@ -6,18 +6,18 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_copyright_text;
-use function CompanyName\wunderscore\print_social_network_links;
-use function CompanyName\wunderscore\print_mobile_menu;
+use function WebDevStudios\custom\print_copyright_text;
+use function WebDevStudios\custom\print_social_network_links;
+use function WebDevStudios\custom\print_mobile_menu;
 
 ?>
 
 	<footer class="site-footer">
 
-		<nav id="site-footer-navigation" class="footer-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Footer Navigation', 'wunderscore' ); ?>">
+		<nav id="site-footer-navigation" class="footer-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Footer Navigation', 'custom' ); ?>">
 			<?php
 			wp_nav_menu(
 				[

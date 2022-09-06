@@ -2,10 +2,10 @@
 /**
  * Shortcode to display copyright year.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Create a Shortcode to display the copyright year.

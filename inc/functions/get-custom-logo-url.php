@@ -2,10 +2,10 @@
 /**
  * Retrieve the URL of the custom logo uploaded, if one exists.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Retrieve the URL of the custom logo uploaded, if one exists.

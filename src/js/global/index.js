@@ -4,5 +4,5 @@
  * Import JS that applies globally.
  */
 
-import './js-enabled';
+// import './js-enabled';
 import './window-ready';

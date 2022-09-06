@@ -2,10 +2,10 @@
 /**
  * Display SVG Markup.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Display SVG Markup.

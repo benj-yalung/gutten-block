@@ -2,16 +2,16 @@
 /**
  * The template used for displaying generic elements in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_scaffolding_section;
+use function WebDevStudios\custom\print_scaffolding_section;
 
 ?>
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'elements', 'wunderscore' ); ?>"><?php esc_html_e( 'Generic Elements', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'elements', 'custom' ); ?>"><?php esc_html_e( 'Generic Elements', 'custom' ); ?></h2>
 
 	<?php
 	// Right-aligned Image.
@@ -19,7 +19,7 @@ use function CompanyName\wunderscore\print_scaffolding_section;
 		[
 			'title'       => 'Numeric Pagination',
 			'description' => 'Display numeric pagination.',
-			'usage'       => 'wunderscore_print_numeric_pagination()',
+			'usage'       => 'custom_print_numeric_pagination()',
 			'output'      => '
 				<nav class="pagination-container">
 					<a class="prev page-numbers" href="#>&laquo;</a>

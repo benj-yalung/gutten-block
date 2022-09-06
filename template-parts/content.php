@@ -4,12 +4,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_post_date;
-use function CompanyName\wunderscore\print_post_author;
-use function CompanyName\wunderscore\print_entry_footer;
+use function WebDevStudios\custom\print_post_date;
+use function WebDevStudios\custom\print_post_author;
+use function WebDevStudios\custom\print_entry_footer;
 
 ?>
 
@@ -38,7 +38,7 @@ use function CompanyName\wunderscore\print_entry_footer;
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. */
-					esc_html__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'wunderscore' ),
+					esc_html__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'custom' ),
 					[
 						'span' => [
 							'class' => [],
@@ -51,7 +51,7 @@ use function CompanyName\wunderscore\print_entry_footer;
 
 		wp_link_pages(
 			[
-				'before' => '<div class="page-links">' . esc_attr__( 'Pages:', 'wunderscore' ),
+				'before' => '<div class="page-links">' . esc_attr__( 'Pages:', 'custom' ),
 				'after'  => '</div>',
 			]
 		);

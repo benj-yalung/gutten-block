@@ -6,10 +6,10 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_comments;
+use function WebDevStudios\custom\print_comments;
 
 get_header(); ?>
 

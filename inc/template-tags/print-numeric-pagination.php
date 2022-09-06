@@ -2,10 +2,10 @@
 /**
  * Displays numeric pagination on archive pages.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Displays numeric pagination on archive pages.
@@ -40,7 +40,7 @@ function print_numeric_pagination( $args = [], $query = null ) {
 	}
 	?>
 
-	<nav class="container pagination-container" aria-label="<?php esc_attr_e( 'numeric pagination', 'wunderscore' ); ?>">
+	<nav class="container pagination-container" aria-label="<?php esc_attr_e( 'numeric pagination', 'custom' ); ?>">
 		<?php echo paginate_links( $args ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- XSS OK. ?>
 	</nav>
 

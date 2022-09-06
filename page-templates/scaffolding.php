@@ -2,18 +2,18 @@
 /**
  * Template Name: Scaffolding
  *
- * Template Post Type: page, scaffolding, wunderscore_scaffolding
+ * Template Post Type: page, scaffolding, custom_scaffolding
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wunderscore
+ * @package custom
  */
 
 get_header(); ?>
 
 	<main id="main" class="container site-main relative">
 
-		<?php do_action( 'wunderscore_scaffolding_content' ); ?>
+		<?php do_action( 'custom_scaffolding_content' ); ?>
 
 	</main><!-- #main -->
 

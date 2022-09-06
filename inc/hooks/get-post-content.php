@@ -2,10 +2,10 @@
 /**
  * Filters WYSIWYG content with the_content filter.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Filters WYSIWYG content with the_content filter.

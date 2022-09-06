@@ -1,5 +1,5 @@
 {
-	"name": "companyname/wunderscore",
+	"name": "webdevstudios/custom",
 	"description": "A starter theme from WebDevStudios.",
 	"type": "wordpress-theme",
 	"license": "GPL-2.0-or-later",
@@ -30,6 +30,6 @@
 	"scripts": {
 		"format": "phpcbf --report=summary,source",
 		"lint": "phpcs --report=summary,source",
-		"pot": "wp i18n make-pot . build/languages/wunderscore.pot --exclude=node_modules,vendor,build --allow-root"
+		"pot": "wp i18n make-pot . build/languages/custom.pot --exclude=node_modules,vendor,build --allow-root"
 	}
 }

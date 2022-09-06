@@ -2,10 +2,10 @@
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -17,7 +17,7 @@ namespace CompanyName\wunderscore;
  * @author WebDevStudios
  */
 function content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'wunderscore_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'custom_content_width', 640 );
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\content_width', 0 );

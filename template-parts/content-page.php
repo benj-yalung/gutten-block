@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wunderscore
+ * @package custom
  */
 
 ?>
@@ -21,7 +21,7 @@
 
 		wp_link_pages(
 			[
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wunderscore' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'custom' ),
 				'after'  => '</div>',
 			]
 		);
@@ -34,7 +34,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edit %s', 'wunderscore' ),
+						esc_html__( 'Edit %s', 'custom' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',

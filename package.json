@@ -1,5 +1,5 @@
 {
-	"name": "wunderscore",
+	"name": "custom",
 	"version": "3.0.0",
 	"private": true,
 	"description": "A starter theme from WebDevStudios.",
@@ -56,6 +56,7 @@
 		"webpack-merge": "^5.8.0"
 	},
 	"scripts": {
+		"build-webpack": "webpack --config webpack.config.js",
 		"accessibility": "pa11y-ci --reporter=pa11y-ci-reporter-html --sitemap $npm_config_url/sitemap.xml",
 		"build": "cross-env NODE_ENV=production wp-scripts build --config webpack.prod.js",
 		"build:pot": "composer run-script pot",
@@ -76,7 +77,10 @@
 		"packages-update": "wp-scripts packages-update",
 		"postinstall": "composer install --quiet && npm run build",
 		"start": "cross-env NODE_ENV=development wp-scripts start",
-		"sync": "browser-sync start --https --proxy https://gutten.test --no-open --files 'build/*.*, **/*.html, **/*.php, !node_modules/**/*.html'",
+		"sync": "browser-sync start --https --proxy https://custom.test --no-open --files 'build/*.*, **/*.html, **/*.php, !node_modules/**/*.html'",
 		"watch": "run-p start sync"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21"
 	}
 }

@@ -18,6 +18,7 @@ module.exports = merge( common, {
 		new ImageminPlugin( {
 			disable: false,
 			test: /\.(jpe?g|png|gif|svg)$/i,
+
 			gifsicle: {
 				interlaced: true,
 			},
@@ -48,6 +49,15 @@ module.exports = merge( common, {
 					],
 				},
 			} ),
+		],
+	},
+	module: {
+        rules: [
+			{
+                test: /\.(js|jsx)$/, // Identifies which file or files should be transformed.
+                use: { loader: "babel-loader" }, // Babel loader to transpile modern JavaScript.
+                exclude: /(node_modules|bower_components)/ // JavaScript files to be ignored.
+            }
 		],
 	},
 } );

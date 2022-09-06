@@ -2,16 +2,16 @@
 /**
  * The template used for displaying colors & fonts in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_global_scaffolding_section;
+use function WebDevStudios\custom\print_global_scaffolding_section;
 
 ?>
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'globals', 'wunderscore' ); ?>"><?php esc_html_e( 'Globals', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'globals', 'custom' ); ?>"><?php esc_html_e( 'Globals', 'custom' ); ?></h2>
 
 	<?php
 		// Theme colors.

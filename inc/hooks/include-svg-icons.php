@@ -2,10 +2,10 @@
 /**
  * Add SVG definitions to footer.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Add SVG definitions to footer.

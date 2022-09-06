@@ -2,10 +2,10 @@
 /**
  * Customizer panels.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Add a custom panels to attach sections too.
@@ -22,8 +22,8 @@ function customize_panels( $wp_customize ) {
 			'priority'       => 10,
 			'capability'     => 'edit_theme_options',
 			'theme_supports' => '',
-			'title'          => esc_html__( 'Site Options', 'wunderscore' ),
-			'description'    => esc_html__( 'Other theme options.', 'wunderscore' ),
+			'title'          => esc_html__( 'Site Options', 'custom' ),
+			'description'    => esc_html__( 'Other theme options.', 'custom' ),
 		]
 	);
 }

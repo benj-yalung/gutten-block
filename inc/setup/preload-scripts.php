@@ -2,10 +2,10 @@
 /**
  * Preload styles and scripts.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Preload styles and scripts.

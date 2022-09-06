@@ -2,10 +2,10 @@
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -24,7 +24,7 @@ function setup() {
 	 * README.md file in this theme to find and replace all
 	 * references of wd_s
 	 */
-	load_theme_textdomain( 'wunderscore', get_template_directory() . '/build/languages' );
+	load_theme_textdomain( 'custom', get_template_directory() . '/build/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -48,9 +48,9 @@ function setup() {
 	// Register navigation menus.
 	register_nav_menus(
 		[
-			'primary' => esc_html__( 'Primary Menu', 'wunderscore' ),
-			'footer'  => esc_html__( 'Footer Menu', 'wunderscore' ),
-			'mobile'  => esc_html__( 'Mobile Menu', 'wunderscore' ),
+			'primary' => esc_html__( 'Primary Menu', 'custom' ),
+			'footer'  => esc_html__( 'Footer Menu', 'custom' ),
+			'mobile'  => esc_html__( 'Mobile Menu', 'custom' ),
 		]
 	);
 
@@ -73,7 +73,7 @@ function setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'wunderscore_custom_background_args',
+			'custom_custom_background_args',
 			[
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -104,22 +104,22 @@ function setup() {
 		'editor-font-sizes',
 		[
 			[
-				'name' => __( 'Small', 'wunderscore' ),
+				'name' => __( 'Small', 'custom' ),
 				'size' => 12,
 				'slug' => 'small',
 			],
 			[
-				'name' => __( 'Normal', 'wunderscore' ),
+				'name' => __( 'Normal', 'custom' ),
 				'size' => 16,
 				'slug' => 'normal',
 			],
 			[
-				'name' => __( 'Large', 'wunderscore' ),
+				'name' => __( 'Large', 'custom' ),
 				'size' => 36,
 				'slug' => 'large',
 			],
 			[
-				'name' => __( 'Huge', 'wunderscore' ),
+				'name' => __( 'Huge', 'custom' ),
 				'size' => 50,
 				'slug' => 'huge',
 			],

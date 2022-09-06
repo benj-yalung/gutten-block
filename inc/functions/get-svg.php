@@ -2,10 +2,10 @@
 /**
  * Return SVG markup.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Return SVG markup.
@@ -19,12 +19,12 @@ namespace CompanyName\wunderscore;
 function get_svg( $args = [] ) {
 	// Make sure $args are an array.
 	if ( empty( $args ) ) {
-		return esc_attr__( 'Please define default parameters in the form of an array.', 'wunderscore' );
+		return esc_attr__( 'Please define default parameters in the form of an array.', 'custom' );
 	}
 
 	// Define an icon.
 	if ( false === array_key_exists( 'icon', $args ) ) {
-		return esc_attr__( 'Please define an SVG icon filename.', 'wunderscore' );
+		return esc_attr__( 'Please define an SVG icon filename.', 'custom' );
 	}
 
 	// Set defaults.

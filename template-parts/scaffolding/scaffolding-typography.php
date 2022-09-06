@@ -2,17 +2,17 @@
 /**
  * The template used for displaying typography in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_scaffolding_section;
+use function WebDevStudios\custom\print_scaffolding_section;
 
 ?>
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'typography', 'wunderscore' ); ?>">
-		<?php esc_html_e( 'Typography', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'typography', 'custom' ); ?>">
+		<?php esc_html_e( 'Typography', 'custom' ); ?></h2>
 
 	<?php
 	// H1.

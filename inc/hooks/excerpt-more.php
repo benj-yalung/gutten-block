@@ -2,10 +2,10 @@
 /**
  * Customize the [...] on the_excerpt();
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Customize the [...] on the_excerpt();
@@ -17,7 +17,7 @@ namespace CompanyName\wunderscore;
  * @return string Read more link.
  */
 function excerpt_more( $more ) {
-	return sprintf( ' <a class="more-link" href="%1$s">%2$s</a>', get_permalink( get_the_ID() ), esc_html__( 'Read more...', 'wunderscore' ) );
+	return sprintf( ' <a class="more-link" href="%1$s">%2$s</a>', get_permalink( get_the_ID() ), esc_html__( 'Read more...', 'custom' ) );
 }
 
 add_filter( 'excerpt_more', __NAMESPACE__ . '\excerpt_more' );

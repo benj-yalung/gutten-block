@@ -2,10 +2,10 @@
 /**
  * The template used for displaying media in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_scaffolding_section;
+use function WebDevStudios\custom\print_scaffolding_section;
 
 global $wp_embed;
 
@@ -13,7 +13,7 @@ global $wp_embed;
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'media', 'wunderscore' ); ?>"><?php esc_html_e( 'Media', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'media', 'custom' ); ?>"><?php esc_html_e( 'Media', 'custom' ); ?></h2>
 
 	<?php
 	// Full-aligned cover hero.

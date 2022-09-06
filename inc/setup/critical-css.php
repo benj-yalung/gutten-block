@@ -2,10 +2,10 @@
 /**
  * Inline Critical CSS.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Inline Critical CSS.

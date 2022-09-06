@@ -2,10 +2,10 @@
 /**
  * Declare HTML tags allowed for scaffolding.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Declare HTML tags allowed for scaffolding.

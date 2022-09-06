@@ -55,18 +55,18 @@ If you want to set me up manually:
 
 You'll need to change all instances of the name: `wd_s`.
 
-- Search for: `@package wunderscore` and replace with: `@package project_name` to capture the package name
-- Update `"CompanyName\wunderscore,wunderscore"` to: `"CompanyName\project_name,project_name"` (with double quotes) in phpcs.xml.dist
-- Search for: `CompanyName\wunderscore` and replace with: `CompanyName\project_name` to capture the namespaces
-- Update `"companyname/wunderscore"` to `"companyname/project_name"` (with double quotes) in composer.json
-- Search for: `, 'wunderscore'` and replace with: `, 'project_name'` (inside backticks) to capture the text domain
-- Update `Text Domain: wunderscore` to: `Text Domain: project_name` in style.css
-- Update `"wunderscore"` to: `"project_name"` (with double quotes) in phpcs.xml.dist and package.json
-- Update `'wunderscore'` to: `'project_name'` (with single quotes) in inc/setup/setup.php
-- Search for: `wunderscore_` and replace with: `project_name_` to capture all the function names
-- Search for: `'wunderscore-` and replace with: `'project_name-` to capture prefixed handles
-- Search for `wunderscore.pot` and replace with: `project_name.pot` to capture translation files
-- Search for `gutten.test` and replace with: `project_name.test` to match your local development URL
+- Search for: `@package custom` and replace with: `@package project_name` to capture the package name
+- Update `"WebDevStudios\custom,custom"` to: `"CompanyName\project_name,project_name"` (with double quotes) in phpcs.xml.dist
+- Search for: `WebDevStudios\custom` and replace with: `CompanyName\project_name` to capture the namespaces
+- Update `"webdevstudios/custom"` to `"companyname/project_name"` (with double quotes) in composer.json
+- Search for: `, 'custom'` and replace with: `, 'project_name'` (inside backticks) to capture the text domain
+- Update `Text Domain: custom` to: `Text Domain: project_name` in style.css
+- Update `"custom"` to: `"project_name"` (with double quotes) in phpcs.xml.dist and package.json
+- Update `'custom'` to: `'project_name'` (with single quotes) in inc/setup/setup.php
+- Search for: `custom_` and replace with: `project_name_` to capture all the function names
+- Search for: `'custom-` and replace with: `'project_name-` to capture prefixed handles
+- Search for `custom.pot` and replace with: `project_name.pot` to capture translation files
+- Search for `custom.test` and replace with: `project_name.test` to match your local development URL
 - Edit the theme information in the header of style.scss to meet your needs
 
 ## Setup

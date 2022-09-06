@@ -2,10 +2,10 @@
 /**
  * Adds OG tags to the head for better social sharing.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Adds OG tags to the head for better social sharing.
@@ -38,7 +38,7 @@ function add_og_tags() {
 	$default_url = get_permalink();
 
 	// Set our base description.
-	$default_base_description = ( get_bloginfo( 'description' ) ) ? get_bloginfo( 'description' ) : esc_html__( 'Visit our website to learn more.', 'wunderscore' );
+	$default_base_description = ( get_bloginfo( 'description' ) ) ? get_bloginfo( 'description' ) : esc_html__( 'Visit our website to learn more.', 'custom' );
 
 	// Set the card type.
 	$default_type = 'article';
@@ -78,13 +78,13 @@ function add_og_tags() {
 
 		$term_name      = single_term_title( '', false );
 		$card_title     = $term_name . ' - ' . $default_title;
-		$specify        = ( is_category() ) ? esc_html__( 'categorized in', 'wunderscore' ) : esc_html__( 'tagged with', 'wunderscore' );
+		$specify        = ( is_category() ) ? esc_html__( 'categorized in', 'custom' ) : esc_html__( 'tagged with', 'custom' );
 		$queried_object = get_queried_object();
 		$card_url       = get_term_link( $queried_object );
 		$card_type      = 'website';
 
 		// Translators: get the term name.
-		$card_long_description = sprintf( esc_html__( 'Posts %1$s %2$s.', 'wunderscore' ), $specify, $term_name );
+		$card_long_description = sprintf( esc_html__( 'Posts %1$s %2$s.', 'custom' ), $specify, $term_name );
 		$card_description      = $card_long_description;
 	}
 
@@ -97,7 +97,7 @@ function add_og_tags() {
 		$card_type   = 'website';
 
 		// Translators: get the search term.
-		$card_long_description = sprintf( esc_html__( 'Search results for %s.', 'wunderscore' ), $search_term );
+		$card_long_description = sprintf( esc_html__( 'Search results for %s.', 'custom' ), $search_term );
 		$card_description      = $card_long_description;
 	}
 

@@ -2,10 +2,10 @@
 /**
  * Removes or Adjusts the prefix on category archive page titles.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Removes or Adjusts the prefix on category archive page titles.

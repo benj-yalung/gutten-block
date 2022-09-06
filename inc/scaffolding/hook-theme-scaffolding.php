@@ -2,10 +2,10 @@
 /**
  * Hook the theme's scaffolding template parts into the scaffolding template.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Hook the theme's scaffolding template parts into the scaffolding template.
@@ -26,4 +26,4 @@ function hook_theme_scaffolding() {
 	get_template_part( $template_dir, 'elements' );
 }
 
-add_action( 'wunderscore_scaffolding_content', __NAMESPACE__ . '\hook_theme_scaffolding' );
+add_action( 'custom_scaffolding_content', __NAMESPACE__ . '\hook_theme_scaffolding' );

@@ -2,10 +2,10 @@
 /**
  * Build a global scaffolding element.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Build a global scaffolding element.

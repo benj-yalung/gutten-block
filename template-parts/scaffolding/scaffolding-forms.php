@@ -2,16 +2,16 @@
 /**
  * The template used for displaying forms in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_scaffolding_section;
+use function WebDevStudios\custom\print_scaffolding_section;
 
 ?>
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'forms', 'wunderscore' ); ?>"><?php esc_html_e( 'Forms', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'forms', 'custom' ); ?>"><?php esc_html_e( 'Forms', 'custom' ); ?></h2>
 
 	<?php
 	// Search form.

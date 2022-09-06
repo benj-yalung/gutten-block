@@ -2,10 +2,10 @@
 /**
  * Add a scaffolding nav for easier access.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Add a scaffolding nav for easier access.
@@ -15,14 +15,14 @@ namespace CompanyName\wunderscore;
 function print_theme_scaffolding_nav() {
 	?>
 	<nav class="scaffolding-nav">
-		<span><?php echo esc_html__( 'Scroll to:', 'wunderscore' ); ?></span>
-		<a href="#globals" class="link"><?php echo esc_html__( 'Globals', 'wunderscore' ); ?></a>
-		<a href="#typography" class="link"><?php echo esc_html__( 'Typography', 'wunderscore' ); ?></a>
-		<a href="#media" class="link"><?php echo esc_html__( 'Media', 'wunderscore' ); ?></a>
-		<a href="#icons" class="link"><?php echo esc_html__( 'Icons', 'wunderscore' ); ?></a>
-		<a href="#buttons" class="link"><?php echo esc_html__( 'Buttons', 'wunderscore' ); ?></a>
-		<a href="#forms" class="link"><?php echo esc_html__( 'Forms', 'wunderscore' ); ?></a>
-		<a href="#elements" class="link"><?php echo esc_html__( 'Elements', 'wunderscore' ); ?></a>
+		<span><?php echo esc_html__( 'Scroll to:', 'custom' ); ?></span>
+		<a href="#globals" class="link"><?php echo esc_html__( 'Globals', 'custom' ); ?></a>
+		<a href="#typography" class="link"><?php echo esc_html__( 'Typography', 'custom' ); ?></a>
+		<a href="#media" class="link"><?php echo esc_html__( 'Media', 'custom' ); ?></a>
+		<a href="#icons" class="link"><?php echo esc_html__( 'Icons', 'custom' ); ?></a>
+		<a href="#buttons" class="link"><?php echo esc_html__( 'Buttons', 'custom' ); ?></a>
+		<a href="#forms" class="link"><?php echo esc_html__( 'Forms', 'custom' ); ?></a>
+		<a href="#elements" class="link"><?php echo esc_html__( 'Elements', 'custom' ); ?></a>
 	</nav><!-- .scaffolding-nav -->
 	<?php
 }

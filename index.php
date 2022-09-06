@@ -9,10 +9,10 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_numeric_pagination;
+use function WebDevStudios\custom\print_numeric_pagination;
 
 get_header(); ?>
 

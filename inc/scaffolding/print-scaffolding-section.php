@@ -2,10 +2,10 @@
 /**
  * Build a scaffolding section.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Build a scaffolding section.
@@ -48,19 +48,19 @@ function print_scaffolding_section( $args = [] ) {
 				<div class="scaffolding-document-details">
 
 				<?php if ( $args['description'] ) : ?>
-					<p><strong><?php esc_html_e( 'Description', 'wunderscore' ); ?>:</strong></p>
+					<p><strong><?php esc_html_e( 'Description', 'custom' ); ?>:</strong></p>
 					<p class="scaffolding-document-description"><?php echo esc_html( $args['description'] ); ?></p>
 				<?php endif; ?>
 
 				<?php if ( $args['parameters'] ) : ?>
-					<p><strong><?php esc_html_e( 'Parameters', 'wunderscore' ); ?>:</strong></p>
+					<p><strong><?php esc_html_e( 'Parameters', 'custom' ); ?>:</strong></p>
 					<?php foreach ( $args['parameters'] as $key => $value ) : ?>
 						<p><code><?php echo esc_html( $key ); ?></code> <?php echo esc_html( $value ); ?></p>
 					<?php endforeach; ?>
 				<?php endif; ?>
 
 				<?php if ( $args['arguments'] ) : ?>
-					<p><strong><?php esc_html_e( 'Arguments', 'wunderscore' ); ?>:</strong></p>
+					<p><strong><?php esc_html_e( 'Arguments', 'custom' ); ?>:</strong></p>
 					<?php foreach ( $args['arguments'] as $key => $value ) : ?>
 						<p><code><?php echo esc_html( $key ); ?></code> <?php echo esc_html( $value ); ?></p>
 					<?php endforeach; ?>
@@ -71,12 +71,12 @@ function print_scaffolding_section( $args = [] ) {
 				<div class="scaffolding-document-usage">
 
 				<?php if ( $args['usage'] ) : ?>
-					<p><strong><?php esc_html_e( 'Usage', 'wunderscore' ); ?>:</strong></p>
+					<p><strong><?php esc_html_e( 'Usage', 'custom' ); ?>:</strong></p>
 					<pre><?php echo esc_html( $args['usage'] ); ?></pre>
 				<?php endif; ?>
 
 				<?php if ( $args['output'] ) : ?>
-					<p><strong><?php esc_html_e( 'HTML Output', 'wunderscore' ); ?>:</strong></p>
+					<p><strong><?php esc_html_e( 'HTML Output', 'custom' ); ?>:</strong></p>
 					<pre><?php echo esc_html( $args['output'] ); ?></pre>
 				<?php endif; ?>
 

@@ -50,6 +50,11 @@ module.exports = {
 					filename: 'fonts/[name][ext]',
 				},
 			},
+			{
+				test: /\.(js|jsx)$/, // Identifies which file or files should be transformed.
+				use: { loader: "babel-loader" }, // Babel loader to transpile modern JavaScript.
+				exclude: /(node_modules|bower_components)/ // JavaScript files to be ignored.
+			}
 		],
 	},
 	plugins: [
@@ -113,7 +118,7 @@ module.exports = {
 		 *
 		 * @see https://www.npmjs.com/package/eslint-webpack-plugin
 		 */
-		new ESLintPlugin(),
+		// new ESLintPlugin(),
 
 		/**
 		 * Report css warnings and errors to the command line.

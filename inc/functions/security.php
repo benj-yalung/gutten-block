@@ -4,10 +4,10 @@
  *
  * Enable or disable certain functionality to harden WordPress.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Remove generator meta tags.

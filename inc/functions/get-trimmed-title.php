@@ -2,10 +2,10 @@
 /**
  * Trim the title length.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Trim the title length.

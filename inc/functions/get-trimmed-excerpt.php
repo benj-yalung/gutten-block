@@ -2,10 +2,10 @@
 /**
  * Limit the excerpt length.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Limit the excerpt length.

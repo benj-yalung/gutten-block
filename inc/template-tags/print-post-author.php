@@ -4,10 +4,10 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Prints HTML with author information for the current post.
@@ -20,7 +20,7 @@ function print_post_author( $args = [] ) {
 
 	// Set defaults.
 	$defaults = [
-		'author_text' => esc_html__( 'by', 'wunderscore' ),
+		'author_text' => esc_html__( 'by', 'custom' ),
 	];
 
 	// Parse args.

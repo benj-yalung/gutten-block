@@ -2,10 +2,10 @@
 /**
  * Customize "Read More" string on <!-- more --> with the_content();
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Customize "Read More" string on <!-- more --> with the_content();
@@ -15,7 +15,7 @@ namespace CompanyName\wunderscore;
  * @return string Read more link.
  */
 function content_more_link() {
-	return ' <a class="more-link" href="' . get_permalink() . '">' . esc_html__( 'Read More', 'wunderscore' ) . '...</a>';
+	return ' <a class="more-link" href="' . get_permalink() . '">' . esc_html__( 'Read More', 'custom' ) . '...</a>';
 }
 
 add_filter( 'the_content_more_link', __NAMESPACE__ . '\content_more_link' );

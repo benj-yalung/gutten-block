@@ -50,7 +50,7 @@
 	} );
 
 	// Copyright text.
-	api( 'wunderscore_copyright_text', function ( value ) {
+	api( 'custom_copyright_text', function ( value ) {
 		value.bind( function ( to ) {
 			$( '.site-info' ).text( to );
 		} );

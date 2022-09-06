@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_comments;
+use function WebDevStudios\custom\print_comments;
 
 get_header(); ?>
 

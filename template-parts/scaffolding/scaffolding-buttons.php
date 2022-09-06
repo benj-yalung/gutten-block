@@ -2,16 +2,16 @@
 /**
  * The template used for displaying Buttons in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_scaffolding_section;
+use function WebDevStudios\custom\print_scaffolding_section;
 
 ?>
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'buttons', 'wunderscore' ); ?>"><?php esc_html_e( 'Buttons', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'buttons', 'custom' ); ?>"><?php esc_html_e( 'Buttons', 'custom' ); ?></h2>
 	<?php
 		// Button.
 		print_scaffolding_section(

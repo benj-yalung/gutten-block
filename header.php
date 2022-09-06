@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wunderscore
+ * @package custom
  */
 
 ?>
@@ -28,7 +28,7 @@
 
 	<?php wp_body_open(); ?>
 
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wunderscore' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'custom' ); ?></a>
 
 	<header class="site-header">
 
@@ -46,21 +46,21 @@
 
 				<?php
 
-				$wunderscore_description = get_bloginfo( 'description', 'display' );
-				if ( $wunderscore_description || is_customize_preview() ) :
+				$custom_description = get_bloginfo( 'description', 'display' );
+				if ( $custom_description || is_customize_preview() ) :
 					?>
-					<p class="site-description"><?php echo esc_html( $wunderscore_description ); ?></p>
+					<p class="site-description"><?php echo esc_html( $custom_description ); ?></p>
 				<?php endif; ?>
 
 			</div><!-- .site-branding -->
 
 			<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'mobile' ) ) : ?>
-				<button type="button" class="off-canvas-open" aria-expanded="false" aria-label="<?php esc_attr_e( 'Open Menu', 'wunderscore' ); ?>"></button>
+				<button type="button" class="off-canvas-open" aria-expanded="false" aria-label="<?php esc_attr_e( 'Open Menu', 'custom' ); ?>"></button>
 			<?php endif; ?>
 
 		</div><!-- .container -->
 
-		<nav id="site-navigation" class="main-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Main Navigation', 'wunderscore' ); ?>">
+		<nav id="site-navigation" class="main-navigation navigation-menu" aria-label="<?php esc_attr_e( 'Main Navigation', 'custom' ); ?>">
 			<?php
 			wp_nav_menu(
 				[

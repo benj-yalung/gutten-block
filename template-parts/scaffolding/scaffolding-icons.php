@@ -2,17 +2,17 @@
 /**
  * The template used for displaying icons in the scaffolding library.
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\get_svg;
-use function CompanyName\wunderscore\print_scaffolding_section;
+use function WebDevStudios\custom\get_svg;
+use function WebDevStudios\custom\print_scaffolding_section;
 
 ?>
 
 <section class="section-scaffolding">
 
-	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'icons', 'wunderscore' ); ?>"><?php esc_html_e( 'Icons', 'wunderscore' ); ?></h2>
+	<h2 class="scaffolding-heading" id="<?php esc_html_e( 'icons', 'custom' ); ?>"><?php esc_html_e( 'Icons', 'custom' ); ?></h2>
 
 	<?php
 	// SVG Icon.

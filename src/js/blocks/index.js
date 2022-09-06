@@ -4,6 +4,6 @@
  * Import JS for Gutenberg blocks.
  */
 
-// Custom Gutenberg Blocks.
-// import './wd';
-// import './acf';
+import _ from 'lodash';
+
+import './cards-cpt';

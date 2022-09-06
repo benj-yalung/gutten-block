@@ -2,10 +2,10 @@
 /**
  * Display the comments if the count is more than 0.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Display the comments if the count is more than 0.

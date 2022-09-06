@@ -1,14 +1,14 @@
 <?php
 /**
- * Flush out the transients used in wunderscore_categorized_blog.
+ * Flush out the transients used in custom_categorized_blog.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
- * Flush out the transients used in wunderscore_categorized_blog.
+ * Flush out the transients used in custom_categorized_blog.
  *
  * @author WebDevStudios
  *
@@ -20,7 +20,7 @@ function category_transient_flusher() {
 	}
 
 	// Like, beat it. Dig?
-	return delete_transient( 'wunderscore_categories' );
+	return delete_transient( 'custom_categories' );
 }
 
 add_action( 'delete_category', __NAMESPACE__ . '\category_transient_flusher' );

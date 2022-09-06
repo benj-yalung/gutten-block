@@ -4,12 +4,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wunderscore
+ * @package custom
  */
 
-use function CompanyName\wunderscore\print_post_date;
-use function CompanyName\wunderscore\print_post_author;
-use function CompanyName\wunderscore\print_entry_footer;
+use function WebDevStudios\custom\print_post_date;
+use function WebDevStudios\custom\print_post_author;
+use function WebDevStudios\custom\print_entry_footer;
 
 ?>
 

@@ -2,10 +2,10 @@
 /**
  * Enable custom mime types.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Enable custom mime types.

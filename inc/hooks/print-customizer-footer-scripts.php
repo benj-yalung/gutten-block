@@ -2,10 +2,10 @@
 /**
  * Display the customizer footer scripts.
  *
- * @package wunderscore
+ * @package custom
  */
 
-namespace CompanyName\wunderscore;
+namespace WebDevStudios\custom;
 
 /**
  * Display the customizer footer scripts.
@@ -16,7 +16,7 @@ namespace CompanyName\wunderscore;
  */
 function print_customizer_footer_scripts() {
 	// Check for footer scripts.
-	$scripts = get_theme_mod( 'wunderscore_footer_scripts' );
+	$scripts = get_theme_mod( 'custom_footer_scripts' );
 
 	// None? Bail...
 	if ( ! $scripts ) {
