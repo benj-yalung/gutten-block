@@ -153,7 +153,14 @@ export const Controller = function({ attributes, setAttributes }) {
                 label={ 'Is Redirect ?' }
                 checked={ attributes.isRedirect }
                 onChange={ value => updateAttributes('isRedirect', value) } />
-            
+
+                <p>
+                    <strong>Background Color</strong>
+                </p>
+                <ColorPalette 
+                    value={ attributes.backgroundColor } 
+                    onChange={ value => updateAttributes('backgroundColor', value) }>
+                </ColorPalette>
 
                 {/* Static Content Settings */}
                 {
