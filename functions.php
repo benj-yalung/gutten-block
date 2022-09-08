@@ -1,4 +1,7 @@
 <?php
+
+
+
 /**
  * _s functions and definitions.
  *
@@ -8,6 +11,8 @@
  */
 
 namespace WebDevStudios\custom;
+
+
 
 /**
  * Get all the include files for the theme.
@@ -42,46 +47,3 @@ function include_inc_files() {
 
 include_inc_files();
 
-// function register_custom_blocks() {
-// 	wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/build/index.js', array(
-// 		'wp-blocks', 'wp-editor', 'wp-components', 'jquery', 'wp-element', 'wp-block-editor'
-// 	) );
-
-// 	register_block_type( 'gb/accordion-cpt	', array(
-// 		'editor_script'	=> 'custom-scripts'
-// 	) );
-// }
-
-// add_action( 'init', _NAMESPACE_ . '\register_custom_blocks' );
-
-// function cklph_core_scripts(){
-// 	/**
-// 	 * JavaScript of the custom Gutenberg blocks
-// 	 */
-// 	wp_enqueue_script( 'app-script', get_template_directory_uri() . '/build/index.js', array(
-// 		'wp-blocks', 'wp-editor', 'wp-components', 'jquery', 'wp-element', 'wp-block-editor', 'api-fetch'
-// 	), 1, true );
-
-// }
-
-// add_action( 'wp_enqueue_scripts', 'cklph_core_scripts' );
-
-// /**
-//  * WP REST API Controller
-//  */
-// require_once( get_template_directory() . '/rest_controllers/CKLPH_Controller.php' );
-
-
-// /**
-//  * Gutenberg custom scripts
-//  */
-// function gutenberg_enqueue_script()
-// {
-// 	wp_enqueue_script( 'custom-blocks', get_template_directory_uri() . '/build/index.js',  array(
-// 		'wp-blocks', 'wp-editor', 'wp-components', 'jquery', 'wp-element', 'wp-block-editor'
-// 	)  );
-// 	register_block_type( 'clkph/custom-cta', array(
-// 		'editor_script'	=> 'custom-blocks'
-// 	) );
-// }
-// add_action( 'init', 'gutenberg_enqueue_script' );

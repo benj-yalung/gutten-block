@@ -149,26 +149,21 @@ export const Controller = function({ attributes, setAttributes }) {
                     max={ 20 }
                     step={ 1 } />
             }
-            <ToggleControl
+            {/* <ToggleControl
                 label={ 'Is Redirect ?' }
                 checked={ attributes.isRedirect }
                 onChange={ value => updateAttributes('isRedirect', value) } />
-
-                <p>
-                    <strong>Background Color</strong>
-                </p>
-                <ColorPalette 
-                    value={ attributes.backgroundColor } 
-                    onChange={ value => updateAttributes('backgroundColor', value) }>
-                </ColorPalette>
+             */}
 
                 {/* Static Content Settings */}
                 {
                 attributes.useCPT == false &&
                 <PanelBody initialOpen={ false } title={ 'Header Contents' }>
                     <p><strong>Header</strong></p>
-                    <TextControl value={ attributes.header } onChange={ value => updateAttributes('header', value) }></TextControl> 
-                    
+                    <TextControl 
+                        value={ attributes.header } 
+                        onChange={ value => updateAttributes('header', value) }>
+                            </TextControl> 
                 </PanelBody>
                 
             }

@@ -55,7 +55,6 @@ export class CardBlock extends Component
                                 { 
                                     backgroundColor: attributes.backgroundColor,
                                     minHeight: '350px',
-                                    width: '33%'
                                 }
                             }>
                                 {

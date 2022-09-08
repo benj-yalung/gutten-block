@@ -1,0 +1,38 @@
+/* 
+ * ACF "repeat-horizontal" class, display repeaters in horizontal columns 
+ */
+ .repeat-horizontal .acf-repeater tbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone) {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 21%; /* 21% because 25% gives CSS bugs when content pushes width and not 20 because we want the max to be 4 */
+    border-bottom: 1px solid #eee;
+}
+.repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone) td.acf-fields {
+    width: 100% !important; /* important is necessary because it gets overwritten on drag&drop  */
+}
+.repeat-horizontal .acf-repeater .acf-row-handle,
+.repeat-horizontal .acf-repeater .acf-fields{
+    border-width: 0px 0px 0px 1px;
+}
+.repeat-horizontal .acf-repeater .acf-row-handle.order{
+    min-width: 10px; /* to stop breaking layout if we keep the max rows bellow 10 */
+}
+.repeat-horizontal .acf-repeater .acf-row:last-child .acf-row-handle{
+    border-width: 0px;
+}
+.repeat-horizontal .acf-repeater .acf-row-handle .acf-icon{
+    position: relative;
+    margin: 10px 0;
+}
+.repeat-horizontal .acf-repeater .acf-row:hover .acf-row-handle .acf-icon{
+    display: none; /* remove standard annoying hover */
+}
+.repeat-horizontal .acf-repeater .acf-row-handle.remove:hover .acf-icon{
+    display: block; /* re-apply hover on set block */
+}

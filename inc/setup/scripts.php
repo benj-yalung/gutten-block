@@ -25,6 +25,34 @@ function register_custom_blocks() {
 
 add_action( 'init', __NAMESPACE__ . '\register_custom_blocks' );
 
+
+function my_acf_init_block_types() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+       
+
+        // register a cards block.
+		acf_register_block_type(array(
+            'name'              => 'cards',
+            'title'             => __('Cards'),
+            'description'       => __('A cards block.'),
+            'render_template'   => 'template-parts/blocks/cards/cards.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'cards', 'article' ),
+			'enqueue_assets' 	=> function(){
+				//wp_enqueue_style( 'block-slider', get_template_directory_uri() . '/template-parts/blocks/slider/slider.min.css', array(), '1.0.0' );
+
+				wp_enqueue_script( 'block-cards', get_template_directory_uri() . '/template-parts/blocks/cards/cards.min.js', array(), '1.0.0', true );
+			  },
+        ));
+    }
+}
+
+add_action('acf/init', __NAMESPACE__ . '\my_acf_init_block_types');
+
 function scripts() {
 	$asset_file_path = dirname( __DIR__ ) . '/build/index.asset.php';
 

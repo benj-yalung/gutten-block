@@ -2,7 +2,7 @@ module.exports = {
 	extends: [
 		'plugin:@wordpress/eslint-plugin/recommended',
 		'plugin:eslint-comments/recommended',
-		"plugin:@wordpress/eslint-plugin/esnext",
+		'plugin:@wordpress/eslint-plugin/esnext',
 	],
 	parserOptions: {
 		ecmaVersion: 2021,
@@ -17,5 +17,4 @@ module.exports = {
 		'@wordpress/no-global-event-listener': 0, // Disable. We don't use React-based components.
 		camelcase: 1,
 	},
-	
 };
